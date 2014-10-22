@@ -6,7 +6,13 @@ public class A {
 		Scanner console = new Scanner(System.in);
 		int stairs = Integer.parseInt(console.next());
 		int multiplier = Integer.parseInt(console.next());
-		int answer = stairs / 2;
+		int answer = 0;
+		if (stairs %2 == 1){
+			answer = (stairs / 2) + 1;
+		}
+		else{
+			answer = stairs /2;
+		}
 		boolean run = true;
 		
 		if (stairs < multiplier){
